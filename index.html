@@ -110,6 +110,9 @@ nav {
   animation:float 4s ease-in-out infinite;
 }
 .hero-photo-wrap img { width:100%; height:100%; object-fit:cover; }
+.photo-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100%; gap:6px; color:rgba(255,255,255,0.85); font-family:'Nunito',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.5px; text-align:center; padding:10px; }
+.photo-placeholder svg { opacity:0.85; }
+.about-photo img { width:100%; height:100%; object-fit:cover; }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
 .hero-badge {
   position:absolute; background:white; border-radius:16px; padding:8px 14px;
@@ -292,16 +295,16 @@ footer p { color:rgba(255,255,255,0.35); font-size:13px; }
       <div class="hero-tag">🇨🇴 Bogotá, Colombia</div>
       <h1>
         <span data-en="English lessons" data-es="Clases de inglés">English lessons</span>
-        <span class="script" data-en="that feel like home." data-es="que se sienten como en casa.">that feel like home.</span>
+        <span class="script" data-en="that actually feel like you." data-es="que realmente suenan a ti.">that actually feel like you.</span>
       </h1>
-      <p class="hero-sub" data-en="1-on-1 lessons built around real conversations, your pace, and your goals — not a platform taking 30% of every session." data-es="Clases 1 a 1 diseñadas para conversaciones reales, a tu ritmo — sin plataformas que se quedan con el 30%.">1-on-1 lessons built around real conversations, your pace, and your goals — not a platform taking 30% of every session.</p>
+      <p class="hero-sub" data-en="1-on-1 lessons based on real conversations, at your pace. You book directly with me, no middleman platform." data-es="Clases 1 a 1 con conversaciones reales, a tu ritmo. Reservas directo conmigo, sin plataformas de por medio.">1-on-1 lessons based on real conversations, at your pace. You book directly with me, no middleman platform.</p>
       <div class="hero-btns">
         <a href="#booking" class="btn-hot" data-en="🎁 Book Free Intro Call" data-es="🎁 Llamada Gratis">🎁 Book Free Intro Call</a>
         <a href="#lessons" class="btn-soft" data-en="See Lesson Packages" data-es="Ver Paquetes">See Lesson Packages</a>
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-photo-wrap" id="hero-photo">🌺</div>
+      <div class="hero-photo-wrap" id="hero-photo"><div class="photo-placeholder"><svg width="88" height="88" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="28" r="15" fill="rgba(255,255,255,0.55)"/><ellipse cx="40" cy="70" rx="26" ry="18" fill="rgba(255,255,255,0.55)"/></svg><span>Your photo here</span></div></div>
       <div class="hero-badge badge-1">⭐ 5.0 rated</div>
       <div class="hero-badge badge-2">🇨🇴 Native Spanish</div>
       <div class="hero-badge badge-3">✅ 50+ students</div>
@@ -313,7 +316,7 @@ footer p { color:rgba(255,255,255,0.35); font-size:13px; }
   <div class="section-inner" style="text-align:center;">
     <div class="pill-label" data-en="Meet Your Teacher" data-es="Conoce a tu Maestra">Meet Your Teacher</div>
     <h2 class="section-heading" data-en="Hi, I'm Stef 👋" data-es="Hola, soy Stef 👋">Hi, I'm Stef 👋</h2>
-    <p class="section-sub" data-en="Watch my intro — I'll tell you about who I am, how I teach, and what our lessons can look like." data-es="Mira mi presentación — te cuento quién soy, cómo enseño y cómo serían nuestras clases.">Watch my intro — I'll tell you about who I am, how I teach, and what our lessons can look like.</p>
+    <p class="section-sub" data-en="Watch my intro to see who I am, how I teach, and what our lessons look like." data-es="Mira mi presentación para saber quién soy, cómo enseño y cómo son las clases.">Watch my intro to see who I am, how I teach, and what our lessons look like.</p>
     <div class="video-frame" id="video-frame">
       <div class="video-ph" id="video-ph">
         <div class="play-btn">▶</div>
@@ -326,11 +329,11 @@ footer p { color:rgba(255,255,255,0.35); font-size:13px; }
 <section class="section about-section" id="about">
   <div class="section-inner">
     <div class="about-grid">
-      <div class="about-photo" id="about-photo">🌺</div>
+      <div class="about-photo" id="about-photo"><div class="photo-placeholder"><svg width="72" height="72" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="28" r="15" fill="rgba(255,255,255,0.55)"/><ellipse cx="40" cy="70" rx="26" ry="18" fill="rgba(255,255,255,0.55)"/></svg><span>Your photo here</span></div></div>
       <div class="about-text">
         <div class="pill-label" data-en="About Me" data-es="Sobre Mí">About Me</div>
-        <h2 class="section-heading" data-en="Passionate teacher,<br>proud Colombian 🇨🇴" data-es="Maestra apasionada,<br>colombiana orgullosa 🇨🇴">Passionate teacher,<br>proud Colombian 🇨🇴</h2>
-        <p class="about-bio" id="about-bio" data-en="I'm Stefania — an English teacher from Colombia who believes learning a language should feel natural and fun, not stressful. My lessons are built around real conversation, practical vocab, and building the confidence to actually speak." data-es="Soy Stefania — una profesora de inglés de Colombia que cree que aprender un idioma debe sentirse natural y divertido. Mis clases están construidas alrededor de conversaciones reales y vocabulario práctico.">I'm Stefania — an English teacher from Colombia who believes learning a language should feel natural and fun, not stressful. My lessons are built around real conversation, practical vocab, and building the confidence to actually speak.</p>
+        <h2 class="section-heading" data-en="Your teacher,<br>straight from Colombia 🇨🇴" data-es="Tu profe,<br>directo de Colombia 🇨🇴">Your teacher,<br>straight from Colombia 🇨🇴</h2>
+        <p class="about-bio" id="about-bio" data-en="I'm Stefania, an English teacher from Colombia. I think learning a language works best when it feels natural and fun, not like homework. In my lessons we talk about real things, learn words you'll actually use, and get you comfortable speaking." data-es="Soy Stefania, profesora de inglés de Colombia. Creo que aprender un idioma funciona mejor cuando se siente natural y divertido, no como tarea. En mis clases hablamos de cosas reales, aprendemos palabras que vas a usar, y te vas soltando a hablar.">I'm Stefania, an English teacher from Colombia. I think learning a language works best when it feels natural and fun, not like homework. In my lessons we talk about real things, learn words you'll actually use, and get you comfortable speaking.</p>
         <div class="stats-row">
           <div class="stat-box"><div class="stat-num" id="stat-students">50+</div><div class="stat-lbl" data-en="Students" data-es="Estudiantes">Students</div></div>
           <div class="stat-box"><div class="stat-num" id="stat-years">3+</div><div class="stat-lbl" data-en="Years Teaching" data-es="Años Enseñando">Years Teaching</div></div>
@@ -345,13 +348,14 @@ footer p { color:rgba(255,255,255,0.35); font-size:13px; }
   <div class="section-inner">
     <div class="pill-label" data-en="100% Free" data-es="100% Gratis">100% Free</div>
     <h2 class="section-heading" data-en="Book Your Free 15-Min Intro Call" data-es="Reserva Tu Llamada de Intro Gratis">Book Your Free 15-Min Intro Call</h2>
-    <p class="section-sub" data-en="Pick an open slot, fill in your info, and I'll confirm within 24 hours. No commitment, no credit card." data-es="Elige un horario, llena tu info y confirmo en 24 horas. Sin compromiso, sin tarjeta.">Pick an open slot, fill in your info, and I'll confirm within 24 hours. No commitment, no credit card.</p>
+    <p class="section-sub" data-en="Pick a time that works for you, fill in your info, and I'll confirm within 24 hours. It's completely free." data-es="Elige un horario que te sirva, llena tu info y te confirmo en 24 horas. Es completamente gratis.">Pick a time that works for you, fill in your info, and I'll confirm within 24 hours. It's completely free.</p>
     <div class="booking-grid">
       <div class="booking-card">
         <div class="card-title">🗓️ <span data-en="Pick a Time Slot" data-es="Elige un Horario">Pick a Time Slot</span></div>
         <div class="slots-header" data-en="Available Times" data-es="Horarios Disponibles">Available Times</div>
+        <p style="font-size:11px;color:var(--light-text);margin-bottom:10px;" data-en="All times shown in Colombia / Eastern Time (EST)" data-es="Horarios en Colombia / Hora del Este (EST)">All times shown in Colombia / Eastern Time (EST)</p>
         <div class="slots-grid" id="slots-grid">
-          <p class="no-slots">No slots available yet — check back soon!</p>
+          <p class="no-slots">No slots available yet. Check back soon!</p>
         </div>
       </div>
       <div class="booking-card">
@@ -474,20 +478,49 @@ footer p { color:rgba(255,255,255,0.35); font-size:13px; }
 
       <div class="a-section" id="ap-slots">
         <div class="a-title">Availability Slots</div>
-        <p style="color:var(--light-text);font-size:14px;margin-bottom:20px;">Add time slots for your free intro call. Once a student books one, it automatically closes.</p>
+        <p style="color:var(--light-text);font-size:14px;margin-bottom:20px;">Add time slots for your free intro call. Once a student books one, it automatically closes. Past slots are auto-removed.</p>
         <div class="a-mini">
-          <p style="font-weight:800;font-size:13px;margin-bottom:12px;">Add New Slot</p>
+          <p style="font-weight:800;font-size:13px;margin-bottom:12px;">➕ Add a Single Slot</p>
           <div class="a-row">
-            <div class="form-group"><label>Day</label>
-              <select id="slot-day" style="width:100%;padding:11px 14px;border:2px solid var(--border);border-radius:10px;font-family:'Nunito',sans-serif;font-size:14px;">
+            <div class="form-group"><label>Date</label><input type="date" id="slot-date"></div>
+            <div class="form-group"><label>Time</label><input type="time" id="slot-time" value="15:00"></div>
+          </div>
+          <div class="a-row">
+            <div class="form-group"><label>Timezone</label>
+              <select id="slot-tz">
+                <option value="EST" selected>Colombia / EST (UTC-5)</option>
+                <option value="CST">CST (UTC-6)</option>
+                <option value="MST">MST (UTC-7)</option>
+                <option value="PST">PST (UTC-8)</option>
+                <option value="GMT">GMT (UTC+0)</option>
+                <option value="CET">CET (UTC+1)</option>
+              </select>
+            </div>
+            <div class="form-group" style="display:flex;align-items:flex-end;"><button class="a-add" onclick="addSlot()">Add Slot</button></div>
+          </div>
+        </div>
+        <div class="a-mini">
+          <p style="font-weight:800;font-size:13px;margin-bottom:12px;">🔁 Add Recurring Weekly Slots</p>
+          <p style="color:var(--light-text);font-size:12px;margin-bottom:12px;">One click to add a slot at the same time every week (e.g. every Tuesday at 3pm for 4 weeks).</p>
+          <div class="a-row">
+            <div class="form-group"><label>Day of Week</label>
+              <select id="slot-recur-day" style="width:100%;padding:11px 14px;border:2px solid var(--border);border-radius:10px;font-family:'Nunito',sans-serif;font-size:14px;">
                 <option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
               </select>
             </div>
-            <div class="form-group"><label>Date (e.g. Apr 20)</label><input type="text" id="slot-date" placeholder="Apr 20"></div>
+            <div class="form-group"><label>Time</label><input type="time" id="slot-recur-time" value="15:00"></div>
           </div>
           <div class="a-row">
-            <div class="form-group"><label>Time (e.g. 3:00 PM EST)</label><input type="text" id="slot-time" placeholder="3:00 PM EST"></div>
-            <div class="form-group" style="display:flex;align-items:flex-end;"><button class="a-add" onclick="addSlot()">➕ Add Slot</button></div>
+            <div class="form-group"><label>How Many Weeks</label>
+              <select id="slot-recur-weeks" style="width:100%;padding:11px 14px;border:2px solid var(--border);border-radius:10px;font-family:'Nunito',sans-serif;font-size:14px;">
+                <option value="2">2 weeks</option>
+                <option value="4" selected>4 weeks</option>
+                <option value="6">6 weeks</option>
+                <option value="8">8 weeks</option>
+                <option value="12">12 weeks</option>
+              </select>
+            </div>
+            <div class="form-group" style="display:flex;align-items:flex-end;"><button class="a-add" onclick="addRecurringSlots()">Add Recurring Slots</button></div>
           </div>
         </div>
         <div class="slot-adm-grid" id="slot-adm-grid"></div>
@@ -668,16 +701,58 @@ window.saveVideo = async () => {
 
 // SLOTS
 let slots=[];
+const DAY_NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const DAY_MAP={Sunday:0,Monday:1,Tuesday:2,Wednesday:3,Thursday:4,Friday:5,Saturday:6};
+function todayIso(){ return new Date().toISOString().split('T')[0]; }
+function formatTime(t){
+  if(!t) return '';
+  const [h,m]=t.split(':').map(Number);
+  const ampm=h>=12?'PM':'AM';
+  const h12=h%12||12;
+  return h12+':'+String(m||0).padStart(2,'0')+' '+ampm;
+}
+function isoToDisplay(iso){
+  if(!iso) return '';
+  const [y,m,d]=iso.split('-').map(Number);
+  const dt=new Date(y,m-1,d);
+  return dt.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+}
+function isoToDayName(iso){
+  if(!iso) return '';
+  const [y,m,d]=iso.split('-').map(Number);
+  return DAY_NAMES[new Date(y,m-1,d).getDay()];
+}
+async function cleanupPastSlots(){
+  const today=todayIso();
+  const snap=await getDocs(collection(db,'slots'));
+  const dels=[];
+  snap.docs.forEach(d=>{
+    const data=d.data();
+    if(data.isoDate && data.isoDate<today && !data.booked) dels.push(deleteDoc(doc(db,'slots',d.id)));
+  });
+  if(dels.length) await Promise.all(dels);
+}
 async function loadSlots() {
+  await cleanupPastSlots();
   const snap=await getDocs(collection(db,'slots'));
   slots=snap.docs.map(d=>({id:d.id,...d.data()}));
-  slots.sort((a,b)=>a.createdAt-b.createdAt);
+  slots.sort((a,b)=>{
+    if(a.isoDate && b.isoDate){
+      const c=a.isoDate.localeCompare(b.isoDate);
+      if(c!==0) return c;
+      return (a.isoTime||'').localeCompare(b.isoTime||'');
+    }
+    return (a.createdAt||0)-(b.createdAt||0);
+  });
   renderSlots(); renderAdminSlots();
+  // Set min date on admin date input to today
+  const dateInput=document.getElementById('slot-date');
+  if(dateInput) dateInput.min=todayIso();
 }
 function renderSlots() {
   const grid=document.getElementById('slots-grid');
   const open=slots.filter(s=>!s.booked);
-  if(!open.length){ grid.innerHTML=`<p class="no-slots">${lang==='en'?'No slots available yet — check back soon!':'Sin horarios disponibles aún — ¡vuelve pronto!'}</p>`; return; }
+  if(!open.length){ grid.innerHTML=`<p class="no-slots">${lang==='en'?'No slots available yet. Check back soon!':'Sin horarios disponibles aún. ¡Vuelve pronto!'}</p>`; return; }
   grid.innerHTML=open.map(s=>`<button class="slot-btn" data-id="${s.id}" onclick="selectSlot('${s.id}','${s.day}${s.date?' '+s.date:''} ${s.time}')"><strong>${s.day}</strong><br>${s.date?s.date+' · ':''}${s.time}</button>`).join('');
 }
 let selSlotId=null;
@@ -690,14 +765,47 @@ window.selectSlot=(id,label)=>{
 function renderAdminSlots() {
   const grid=document.getElementById('slot-adm-grid');
   if(!slots.length){ grid.innerHTML='<p style="color:var(--light-text);font-size:14px;">No slots added yet.</p>'; return; }
-  grid.innerHTML=slots.map(s=>`<div class="slot-adm-item ${s.booked?'booked':''}"><span>${s.day}${s.date?' '+s.date:''} ${s.time}${s.booked?' 🔒':''}</span>${!s.booked?`<button class="slot-del" onclick="deleteSlot('${s.id}')">✕</button>`:''}</div>`).join('');
+  grid.innerHTML=slots.map(s=>`<div class="slot-adm-item ${s.booked?'booked':''}"><span>${s.day}${s.date?' '+s.date:''} ${s.time}${s.booked?' 🔒 booked':''}</span>${!s.booked?`<button class="slot-del" onclick="deleteSlot('${s.id}')">✕</button>`:''}</div>`).join('');
 }
 window.addSlot=async()=>{
-  const day=document.getElementById('slot-day').value,date=document.getElementById('slot-date').value,time=document.getElementById('slot-time').value;
-  if(!time) return toast('Please enter a time.',true);
-  await addDoc(collection(db,'slots'),{day,date,time,booked:false,createdAt:Date.now()});
-  document.getElementById('slot-date').value=''; document.getElementById('slot-time').value='';
+  const isoDate=document.getElementById('slot-date').value;
+  const isoTime=document.getElementById('slot-time').value;
+  const tz=document.getElementById('slot-tz').value;
+  if(!isoDate) return toast('Please pick a date.',true);
+  if(!isoTime) return toast('Please pick a time.',true);
+  if(isoDate<todayIso()) return toast('Date cannot be in the past.',true);
+  const day=isoToDayName(isoDate);
+  const date=isoToDisplay(isoDate);
+  const time=formatTime(isoTime)+' '+tz;
+  await addDoc(collection(db,'slots'),{day,date,time,isoDate,isoTime,tz,booked:false,createdAt:Date.now()});
+  document.getElementById('slot-date').value='';
   await loadSlots(); toast('✅ Slot added!');
+};
+window.addRecurringSlots=async()=>{
+  const dayName=document.getElementById('slot-recur-day').value;
+  const isoTime=document.getElementById('slot-recur-time').value;
+  const weeks=parseInt(document.getElementById('slot-recur-weeks').value);
+  const tz=document.getElementById('slot-tz').value;
+  if(!isoTime) return toast('Please pick a time.',true);
+  const targetDay=DAY_MAP[dayName];
+  const today=new Date();
+  today.setHours(0,0,0,0);
+  let first=new Date(today);
+  const diff=(targetDay-today.getDay()+7)%7 || 7;
+  first.setDate(today.getDate()+diff);
+  const timeDisplay=formatTime(isoTime)+' '+tz;
+  const ops=[];
+  for(let i=0;i<weeks;i++){
+    const d=new Date(first);
+    d.setDate(first.getDate()+(i*7));
+    const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),dd=String(d.getDate()).padStart(2,'0');
+    const isoDate=`${y}-${m}-${dd}`;
+    const dateDisplay=d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    ops.push(addDoc(collection(db,'slots'),{day:dayName,date:dateDisplay,time:timeDisplay,isoDate,isoTime,tz,booked:false,createdAt:Date.now()+i}));
+  }
+  await Promise.all(ops);
+  await loadSlots();
+  toast(`✅ Added ${weeks} ${dayName} slots!`);
 };
 window.deleteSlot=async id=>{
   if(!confirm('Delete this slot?')) return;
@@ -727,7 +835,7 @@ async function loadLessons() {
 }
 function renderLessons() {
   const grid=document.getElementById('lessons-grid');
-  if(!lessons.length){ grid.innerHTML='<p style="color:var(--light-text);text-align:center;grid-column:1/-1;padding:40px 0;">No lessons yet — check back soon!</p>'; return; }
+  if(!lessons.length){ grid.innerHTML='<p style="color:var(--light-text);text-align:center;grid-column:1/-1;padding:40px 0;">No lessons yet. Check back soon!</p>'; return; }
   grid.innerHTML=lessons.map(l=>`<div class="lesson-card"><div class="lesson-name">${lang==='en'?l.titleEn:(l.titleEs||l.titleEn)}</div><div class="lesson-desc">${lang==='en'?l.descEn:(l.descEs||l.descEn)}</div><div class="lesson-dur">⏱ ${l.duration}</div><div class="lesson-price">$${l.price} <small>USD</small></div><button class="btn-book" onclick="openPaypal('${l.id}','${(lang==='en'?l.titleEn:(l.titleEs||l.titleEn)).replace(/'/g,"\\'")}','${(lang==='en'?l.descEn:(l.descEs||l.descEn)).replace(/'/g,"\\'")}',${l.price})">${lang==='en'?'📅 Book This Lesson':'📅 Reservar Esta Clase'}</button></div>`).join('');
 }
 function renderAdminLessons() {
@@ -779,7 +887,7 @@ async function loadBookings() {
   try {
     const snap=await getDocs(query(collection(db,'bookings'),orderBy('createdAt','desc')));
     if(snap.empty){ list.innerHTML='<p style="color:var(--light-text);font-size:14px;">No bookings yet.</p>'; return; }
-    list.innerHTML=snap.docs.map(d=>{const b=d.data(),date=new Date(b.createdAt).toLocaleDateString();return`<div class="booking-row"><strong>${b.studentName||b.name||'Student'} — ${b.lessonTitle||'15-min Intro Call'}</strong><p>${b.email||''} · ${b.slot||b.preferredTime||''} · ${date}</p>${b.paid?`<span style="color:#1A8A4A;font-size:12px;font-weight:800;">✓ Paid $${b.amount}</span>`:'<span style="color:var(--peach);font-size:12px;font-weight:800;">🎁 Free Trial</span>'}</div>`;}).join('');
+    list.innerHTML=snap.docs.map(d=>{const b=d.data(),date=new Date(b.createdAt).toLocaleDateString();return`<div class="booking-row"><strong>${b.studentName||b.name||'Student'} · ${b.lessonTitle||'15-min Intro Call'}</strong><p>${b.email||''} · ${b.slot||b.preferredTime||''} · ${date}</p>${b.paid?`<span style="color:#1A8A4A;font-size:12px;font-weight:800;">✓ Paid $${b.amount}</span>`:'<span style="color:var(--peach);font-size:12px;font-weight:800;">🎁 Free Trial</span>'}</div>`;}).join('');
   } catch { list.innerHTML='<p style="color:var(--light-text);font-size:14px;">Could not load bookings.</p>'; }
 }
 
